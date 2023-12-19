@@ -1,0 +1,55 @@
+﻿<Window x:Class="ITPSSiy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ITPSSiy"
+        mc:Ignorable="d"
+        Title="Автосалон" Height="550" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+     
+        
+        <Grid Grid.Column="0"  HorizontalAlignment="Left" Height="450" >
+            <StackPanel Width="200" >
+                <Image Height="70" Source="C:\Users\admin\Documents\ITPSSiy\icon" Margin="10"/>
+                <Button Content="Покупатели" Height="50" Background="#FF882A2A" FontSize="16" Foreground="White" RenderTransformOrigin="-3.635,-0.126" Click="PokupatButtonClick" />
+                <Button Content="Марки" Height="50" Background="#FF882A2A" FontSize="16" Foreground="White" Click="MarktButtonClick"/>
+                <Button Content="Сотрудники" Height="50" Background="#FF882A2A" FontSize="16" Foreground="White" Click="SotrudnikButtonClick"/>
+                <Button Content="Автомобили" Height="50" Background="#FF882A2A" FontSize="16" Foreground="White" Click="AutoButtonClick"/>
+                <Button Content="Продажи" Height="50" Background="#FF882A2A" FontSize="16" Foreground="White" Click="SalesButtonClick"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                    <Grid Grid.Row="0">
+                    
+                        <Label Content="Автосалон" HorizontalAlignment="Center" Margin="10" FontSize="24"/>
+                
+                </Grid>
+                <Grid Grid.Row="1">
+                    
+                </Grid>
+
+
+            </Grid>
+            <Frame Grid.Row="1" Background="LightGray" Name="MainFrame">
+                
+            </Frame>
+            
+        </Grid>
+    </Grid>
+</Window>
